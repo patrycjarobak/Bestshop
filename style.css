@@ -11,7 +11,7 @@
 
 .logo {
     font-family: "Raleway", sans-serif;;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 300;
     color: var(--color-primary);
     text-decoration: none;
@@ -67,7 +67,7 @@
 .nav__link {
     color: gray;
     font-weight: 700;
-    font-size: 0.6875rem;
+    font-size: 11px;
     text-transform: uppercase;
     text-decoration: none;
     padding: 28px 18px 22px;
@@ -145,31 +145,32 @@
     position: relative;
 }
 
+
+
+
 .sales_info__img {
     position: absolute;
 }
-
-
-.sales_info__one:nth-child(1) .statistics__circle {
-    background-color: var(--color-redish);
+.statistics__single:nth-child(1) .statistics__circle {
+    background-color: #FB3B64;
 }
 
-.sales_info__one:nth-child(1) .statistics__img {
+.sales_info__one:nth-child(1) .sales_info__img  {
     top: 0;
     left: 45%;
 }
 
-.sales_info__one:nth-child(2) .statistics__circle {
-    background-color: var(--color-primary);
+.sales_info__one:nth-child(2) .sales_info___circle {
+    background-color: #08A6E4;
 }
 
-.sales_info__one:nth-child(2) .statistics__img {
+.sales_info__one:nth-child(2) .sales_info__img {
     top: 14px;
     left: 47%;
 }
 
-.sales_info__one:nth-child(3) .statistics__circle {
-    background-color: var(--color-green);
+.sales_info__one:nth-child(3) .sales_info__circle {
+    background-color: #55DFB4;
 }
 
 .sales_info__one:nth-child(3) .statistics__img {
@@ -177,17 +178,150 @@
     left: 50%;
 }
 
-.sales_info__number {
-    font-size: 1.25rem;
-    font-weight: 800;
-    letter-spacing: 0.1875rem;
-    margin-top: 13px;
+/*pros*/
+
+.pros {
+    padding: 100px 0;
+    background-color: #F7F7F7;
 }
 
-.sales_info__description {
-    color: var(--color-grey);
-    margin-top: 19px;
+.pros__container {
+    padding: 0 100px;
 }
+
+.pros__single {
+    background-color: white;
+    border: 1px solid #E8E9ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 37px;
+    border-radius: 5px;
+}
+
+.pros__text {
+    box-sizing: content-box;
+    max-width: 415px;
+    margin: 90px 36px;
+    font-family: "Raleway", sans-serif;
+}
+
+.pros__text::after {
+    content: "";
+    width: 332px;
+    height: 4px;
+    background-color: var(--accent-color);
+    display: block;
+    margin-top: 50px;
+}
+
+.pros__description {
+    margin-top: 30px;
+    line-height: 1.375rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.pros__image {
+    position: relative;
+}
+
+.pros__image img {
+    position: relative;
+    z-index: 2;
+}
+
+.pros__single--notebook {
+    --accent-color: var(--color-redish);
+}
+
+.pros__single--notebook .pros__image {
+    margin-right: 117px;
+    margin-bottom: 38px;
+}
+
+.pros__single--notebook .pros__image::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: var(--accent-color);
+    display: block;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    transform: rotate(45deg);
+}
+
+.pros__single--notebook .pros__image img {
+    width: 386px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+.pros__single--phone {
+    --accent-color: var(--color-primary);
+    flex-direction: row-reverse;
+    padding: 0 20px 0 70px;
+}
+
+.pros__single--phone .pros__image::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    background-color: var(--accent-color);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+
+.pros__single--phone .pros__image img {
+    width: 426px;
+    height: auto;
+}
+
+.pros__single--phone .pros__text {
+    margin: 70px 0;
+}
+
+.pros__double {
+    --accent-color: #55DFB4;
+    display: flex;
+}
+
+.pros__double > div {
+    margin-bottom: 0;
+}
+
+.pros__single--solo {
+    max-width: 620px;
+}
+
+.pros__single--solo .pros__text {
+    max-width: none;
+    margin: 70px 35px;
+}
+
+.pros__single--image {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    border: none;
+    margin-left: 60px;
+}
+
+.pros__single--image img {
+    width: 295px;
+    height: auto;
+    margin-top: 55px;
+}
+
+
 
 
 
