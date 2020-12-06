@@ -151,7 +151,7 @@
 .sales_info__img {
     position: absolute;
 }
-.statistics__single:nth-child(1) .statistics__circle {
+.sales_info__one:nth-child(1) .sales_info__circle {
     background-color: #FB3B64;
 }
 
@@ -160,7 +160,7 @@
     left: 45%;
 }
 
-.sales_info__one:nth-child(2) .sales_info___circle {
+.sales_info__one:nth-child(2) .sales_info__circle {
     background-color: #08A6E4;
 }
 
